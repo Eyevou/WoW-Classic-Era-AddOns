@@ -1,0 +1,50 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+	..\FrameXML\UI.xsd">
+
+	<Frame name="funcdebug_Frame" toplevel="true" frameStrata="LOW" enableMouse="true" hidden="true" parent="UIParent" enableKeyboard="true">
+		<Size>
+			<AbsDimension x="300" y="90"/>
+		</Size>
+		<Anchors>
+			<Anchor point="RIGHTCENTER"/>
+		</Anchors>
+		<Frames>
+			<Button name="RR_OptionsFrameDefaults" inherits="UIPanelButtonTemplate" text="ReloadUI">
+				<Size>
+					<AbsDimension x="100" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="PlayerFrame">
+						<Offset>
+							<AbsDimension x="50" y="2"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						ReloadUI()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="RR_OptionsFrameDefaults" inherits="UIPanelButtonTemplate" text=" X">
+				<Size>
+					<AbsDimension x="20" y="20"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="PlayerFrame">
+						<Offset>
+							<AbsDimension x="120" y="-21"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						LeaveParty()
+					</OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+		<Scripts>
+		</Scripts>
+	</Frame>
+</Ui>

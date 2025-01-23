@@ -1,0 +1,6 @@
+## Interface: 11505
+## Title: ChatFrameTabHide
+## Notes: Hides ChatFrame Tabs.
+## Author: Eyevou
+## Version: 002
+main.lua
