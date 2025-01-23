@@ -1,6 +1,0 @@
-## Interface: 11505
-## Title: EraCensus
-## Notes: Census data for WoW Classic Era realms.
-## Author: Eyevou
-## Version: 001
-main.lua
