@@ -1,7 +1,7 @@
 <h2>You'll want to drop these into:<br> 
   <code>World of Warcraft/_classic_era_/Interface/AddOns/</code></h2>
 
-<h4>!funcdebug</h4> This AddOn is a development addon that adds a ReloadUI() button and LeaveParty() button around the player portrait. More changes coming eventually.<br>
+<h4>!funcdebug</h4> This AddOn is a development addon that adds a ReloadUI() button, to the ESC menu, and LeaveParty() button around the player portrait. More changes coming eventually.<br>
 <h4>ChatFrameTabHide</h4> This AddOn hides all the chatframe tabs and uses the slash command: <code>/cfth</code> <p><h1></h1>
 
 
