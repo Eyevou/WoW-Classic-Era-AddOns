@@ -47,6 +47,32 @@
 					</OnClick>
 				</Scripts>
 			</Button>
+			<CheckButton name="funcdebug_SoundCheck" inherits="ChatConfigCheckButtonTemplate">
+				<Size>
+					<AbsDimension x="25" y="25"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP" relativeTo="PlayerFrame">
+						<Offset>
+							<AbsDimension x="110" y="3"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+				<OnLoad>
+					if (GetCVar("Sound_EnableAllSound")) == "1" then
+						funcdebug_SoundCheck:SetChecked(true)
+					end
+				</OnLoad>
+					<OnClick>
+						if GetCVar("Sound_EnableAllSound") == "1" then
+							SetCVar("Sound_EnableAllSound",0)
+						else
+							SetCVar("Sound_EnableAllSound",1)
+						end
+					</OnClick>
+				</Scripts>
+			</CheckButton>
 			<Button name="RR_OptionsFrameDefaults" inherits="UIPanelButtonTemplate" text=" X">
 				<Size>
 					<AbsDimension x="20" y="20"/>
