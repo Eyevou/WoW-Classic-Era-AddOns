@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 	..\FrameXML\UI.xsd">
-	<Button name="GameMenuButtonReloadButton" inherits="GameMenuButtonTemplate" text="ReloadUI" parent="GameMenuFrame">
+	<Button name="funcdebug_MenuReloadButton" inherits="GameMenuButtonTemplate" text="ReloadUI" parent="GameMenuFrame">
 		<Scripts>
 			<OnLoad>
 				if GameMenuFrame_UpdateVisibleButtons then
@@ -16,21 +16,21 @@
 				end
 			</OnLoad>
 			<OnClick>
-				PlaySound(SOUNDKIT.IG_MAINMENU_LOGOUT);
-				ReloadUI();
-				HideUIPanel(GameMenuFrame);
+				PlaySound(SOUNDKIT.IG_MAINMENU_LOGOUT)
+				ReloadUI()
+				HideUIPanel(GameMenuFrame)
 			</OnClick>
 		</Scripts>
 	</Button>
 	<Frame name="funcdebug_Frame" toplevel="true" frameStrata="LOW" enableMouse="true" hidden="true" parent="UIParent" enableKeyboard="true">
 		<Size>
-			<AbsDimension x="300" y="90"/>
+			<AbsDimension x="0" y="0"/>
 		</Size>
 		<Anchors>
 			<Anchor point="RIGHTCENTER"/>
 		</Anchors>
 		<Frames>
-			<Button name="RR_OptionsFrameDefaults" inherits="UIPanelButtonTemplate" text="ReloadUI">
+			<Button name="funcdebug_ReloadUI" inherits="UIPanelButtonTemplate" text="ReloadUI">
 				<Size>
 					<AbsDimension x="100" y="21"/>
 				</Size>
@@ -73,7 +73,7 @@
 					</OnClick>
 				</Scripts>
 			</CheckButton>
-			<Button name="RR_OptionsFrameDefaults" inherits="UIPanelButtonTemplate" text=" X">
+			<Button name="funcdebug_LeavePartyX" inherits="UIPanelButtonTemplate" text=" X">
 				<Size>
 					<AbsDimension x="20" y="20"/>
 				</Size>
